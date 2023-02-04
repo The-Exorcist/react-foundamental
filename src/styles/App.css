@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .App {
+    width: 800px;
+    padding: 30px 0 30px 0;
+  }
+
+  .post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding: 15px;
+    border: 2px solid teal;
+    margin: 15px 0px 0px 0px;
+  }
+  .post__btns {
+    display: flex;flex-direction: column;row-gap: 10px;
+  }
+  .post-enter {
+    transform: translateX(-350px);
+  }
+  .post-enter-active {
+    transform: translateX(0);
+    transition: all 500ms ease-in;
+  }
+  .post-exit {
+    opacity: 1;
+  }
+  .post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+  }
+
+  .page__wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .page {
+    display: block;
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+  }
+  .page__current {
+    color: #fff;
+    background-color: teal;
+  }
+  .navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 50px;
+    width: 100vw;
+    padding: 0 15px;
+    background-color: lightgrey;
+  }
+  .navbar__links {
+    margin-left: auto;
+  }
